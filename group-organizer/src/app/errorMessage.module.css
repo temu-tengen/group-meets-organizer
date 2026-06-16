@@ -1,0 +1,20 @@
+.errorBody {
+    background-color: transparent;
+    border: 2px solid red;
+
+    border-radius: 15px;
+    padding: 5px;
+
+    margin: 20px;
+}
+
+.errorText {
+    color: red;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.redText {
+    color: red;
+    font-size: 12px;
+}

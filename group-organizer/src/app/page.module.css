@@ -1,0 +1,100 @@
+.page {
+  --background: #fafafa;
+  --foreground: #fff;
+
+  --text-primary: #000;
+  --text-secondary: #666;
+
+  --button-primary-hover: #383838;
+  --button-secondary-hover: #f2f2f2;
+  --button-secondary-border: #ebebeb;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: var(--background);
+}
+
+.loginBox {
+  background-color: lightslategrey;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.input {
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.textStandard {
+  font-size: 20px;
+}
+
+.textBold {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.headingXL {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.buttonMedium {
+  padding:5px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+
+  font-size: 12px;
+  transition: font-size 0.4s ease-in-out;
+
+  background-color: black;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.buttonMedium:hover {
+  font-size: 15px;
+  transition: font-size 0.4s ease-in-out;
+
+  background-color: darkslategray;
+  transition: background-color 0.4s ease-in-out;
+}
+@media (max-width: 600px) {
+  .main {
+    padding: 48px 24px;
+  }
+
+  .intro {
+    gap: 16px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.92px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+
+  .page {
+    --background: #000;
+    --foreground: #000;
+
+    --text-primary: #ededed;
+    --text-secondary: #999;
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+    --button-secondary-border: #1a1a1a;
+  }
+}
